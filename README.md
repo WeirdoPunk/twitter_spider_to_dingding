@@ -3,6 +3,7 @@
 爬取指定推特用户最新推文推送到钉钉
 
 #填写 twitter_spiter.py 里的 webhook 和 secret
+具体可参考https://www.dingtalk.com/qidian/help-detail-20781541.html
 
 #在 coin_ur.ini 里添加需要爬取的用户推特主页地址
 
@@ -18,10 +19,14 @@ sudo apt-get -f install
 dpkg -l | grep chrome
 
 #安装对应版本driver
-在http://chromedriver.storage.googleapis.com/index.html  复制对应版本链接
+在 http://chromedriver.storage.googleapis.com/index.html  复制对应版本链接
+
 wget http://chromedriver.storage.googleapis.com/89.0.4389.23/chromedriver_linux64.zip
+
 unzip chromedriver_linux64.zip
+
 chmod +x chromedriver
+
 sudo mv chromedriver /usr/bin
 
 #装crawlertool包
